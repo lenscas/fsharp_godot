@@ -301,7 +301,7 @@ let isTypeValidForTranslation (ty: System.Type) =
 let createTypeRegisterCalls (ns: string) (c: CsharpClass) =
     let extendingType = c
     let name = $"{ns}.{c.name}"
-    $"initialization.registerType<{extendingType.name}, {name}>();"
+    $"FSGlue.initialization.registerType<{extendingType.name}, {name}>();"
 
 let createTypeRegisterClass (ns: string) (c: seq<string>) =
     let ns = $"namespace {ns};\n"
