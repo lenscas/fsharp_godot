@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <SelfContained>false</SelfContained>
+    <UseAppHost>false</UseAppHost>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="csharpClass.fs" />
+    <Compile Include="projectExplorer.fs" />
+    <Compile Include="argParser.fs" />
+    <Compile Include="writer.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
